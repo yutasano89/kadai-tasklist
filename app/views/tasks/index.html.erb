@@ -1,8 +1,4 @@
-<% if logged_in? %>
-  <p>ようこそ、 <%= current_user.name %> さん</p>
-<% else %>
-  <%= link_to 'login', login_path %>
-<% end %>
+<p>ようこそ、 <%= current_user.name %> さん</p>
 
 <h1><%= current_user.name %> さんのタスク一覧</h1>
 
